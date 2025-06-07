@@ -41,3 +41,25 @@
   --color-base-200: #504100;
   --color-base-100: #1f1800;
 }
+
+
+.navigation_menu > a {
+  position: relative;
+  display: inline-block;
+  padding: 4px 0;
+}
+
+.navigation_menu > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%; /* Start at 0 */
+  background-color: var(--color-base-900);
+  transition: width 0.3s ease;
+}
+
+.navigation_menu > a:hover::after {
+  width: 100%; /* Animate to full width */
+}
