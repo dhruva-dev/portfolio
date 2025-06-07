@@ -17,7 +17,7 @@ export default function Home() {
           <button className="rounded-full btn">Download CV</button>
         </div>
         <div>
-          <Image src="/images/self.png" alt="Logo" width={150} height={200} />
+          <Image src="/images/user.png" alt="Logo" width={150} height={200} />
         </div>
       </div>
     </>
