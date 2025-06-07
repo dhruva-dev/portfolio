@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
 }
@@ -6,5 +7,37 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root:has(input.theme-controller[value="dark"]:checked).logo-light {
-    display: none;
+  display: none;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #ffd740;
+  --color-primary-content: #1f1800;
+  --color-base-100: #fff6da;
+  --color-base-200: #ffefba;
+  --color-base-300: #ffe799;
+  --color-base-400: #ffdf73;
+  --color-base-500: #ffd740;
+  --color-base-600: #d0ab01;
+  --color-base-700: #8f7500;
+  --color-base-800: #504100;
+  --color-base-900: #1f1800;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: false;
+  --color-primary: #ffd740;
+  --color-primary-content: #1f1800;
+  --color-base-900: #fff6da;
+  --color-base-800: #ffefba;
+  --color-base-700: #ffe799;
+  --color-base-600: #ffdf73;
+  --color-base-500: #ffd740;
+  --color-base-400: #d0ab01;
+  --color-base-300: #8f7500;
+  --color-base-200: #504100;
+  --color-base-100: #1f1800;
 }

@@ -10,7 +10,7 @@ export default function Logo() {
             <div className="flex flex-col">
                 <span className="font-semibold">Engineer</span>
                 <span className="font-semibold">
-                    <span className="bg-[#FFD740] px-1 pb-[2px] rounded dark:text-black">Dhruv</span>
+                    <span className="bg-primary px-1 pb-[2px] rounded dark:text-black">Dhruv</span>
                 </span>
             </div>
         </div>
