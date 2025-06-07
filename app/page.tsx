@@ -1,5 +1,13 @@
+import Logo from "./components/Logo";
+import ThemeToggle from "./components/ThemeToggle";
+
 export default function Home() {
   return (
-    <h1 style={{ textAlign: 'center', fontSize: '30px', fontWeight: 900 }}>Dhruva Singh.</h1>
+    <>
+      <div className="flex justify-between py-3 px-6 items-center">
+        <Logo/>
+        <ThemeToggle/>
+      </div>
+    </>
   );
 }
