@@ -1,26 +1,11 @@
 import DownloadCVButton from "./components/download";
-import Logo from "./components/Logo";
-import ThemeToggle from "./components/ThemeToggle";
 import Image from "next/image";
 import { ComputerDesktopIcon, LightBulbIcon } from '@heroicons/react/24/outline'
-import Navigation from "./navigtion";
 
 export default function Home() {
   return (
     <>
       <div className="px-6">
-        <div className="flex justify-between py-3 items-center">
-          <Logo />
-          <div className="flex gap-10">
-            <div className="hidden sm:block">
-              <Navigation />
-            </div>
-            <ThemeToggle />
-          </div>
-        </div>
-        <div className="sm:hidden flex justify-center mt-4">
-          <Navigation />
-        </div>
         <div className="flex justify-center gap-2 h-100 items-center">
           <div>
             <div className="mb-2">
@@ -32,7 +17,7 @@ export default function Home() {
             <DownloadCVButton />
           </div>
           <div>
-            <Image src="/images/user.png" alt="Logo" width={150} height={200} />
+            <Image src="/images/user2.jpg" alt="Logo" width={200} height={300} style={{ borderRadius: '8px'}}/>
           </div>
         </div>
       </div>
